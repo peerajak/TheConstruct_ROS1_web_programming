@@ -1,0 +1,17 @@
+button {
+}
+button#btn_set {
+}
+button#btn_stop {
+}
+#robot_status {
+}
+#robot_status #moving,
+#robot_status #stopped {
+}
+#robot_status div {
+}
+#robot_status.moving #moving {
+}
+#robot_status.stopped #stopped {
+}

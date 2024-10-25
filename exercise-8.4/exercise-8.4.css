@@ -1,0 +1,111 @@
+/* html, body */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* container */
+#container {
+    background-color: #ddd;
+    height: 100vh;
+}
+
+/* header */
+#container #header {
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#container #header h1 {
+    text-align: center;
+}
+
+/* Contents */
+#container .content {
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    height: calc(100vh - 200px);
+}
+#container #content {
+    width: calc(100% - 300px);
+    box-sizing: border-box;
+    background-color: #555;
+}
+#container #content form div.div-input {
+    float:left;
+    margin: 0 1%;
+    width: 30%;
+}
+#container #content form div.div-input.full {
+    float: left;
+    margin: 20px 0 0;
+    padding: 0 1%;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+#container #content form div.div-input label {
+    color: white;
+    font-size: 18px;
+}
+#container #content form div.div-input input {
+    height: 32px;
+    width: 100%;
+    font-size: 20px;
+}
+#container #content form div.div-input button {
+    height: 32px;
+    width: 200px;
+    margin-top: 10px;
+}
+#container #content form div.div-input button#btn_set {
+    background-color: darkgreen;
+    color: white;
+    font-size: 18px;
+}
+#container #content form div.div-input button#btn_stop {
+    background-color: darkred;
+    color: white;
+    font-size: 18px;
+}
+#msg_error {
+    background: white;
+    color:red
+}
+
+/* Sidebar */
+#container #sidebar {
+    width: 300px;
+    background-color: #333;
+}
+#container #sidebar h3 {
+    color: white;
+}
+#container #sidebar ul {
+}
+#container #sidebar ul li {
+    color: white;
+    margin-top: 20px;
+}
+
+/* Footer */
+#container #footer {
+    clear: both;
+    height: 100px;
+}
+
+@media (max-width: 800px) {
+    #container {
+        height: auto;
+    }
+    #container #content, #container #sidebar {
+        width: 100%;
+    }
+    #container #content form div.div-input {
+        float:none;
+        width: 100%;
+    }
+    #container #content form div.div-input button {
+        width: 100%;
+    }
+}

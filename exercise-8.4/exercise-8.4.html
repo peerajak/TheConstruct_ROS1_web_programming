@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My 1st webpage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.1.0/roslib.min.js" type="text/javascript"></script>
+    <script src="exercise-8.4.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./exercise-8.4.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Exercise 8.4</h1>
+        </div>
+
+        <div id="content" class="content">
+            <form>
+                <div class="div-input">
+                    <label>Rosbridge address</label>
+                    <input type="text" id="txt_rosbridge_address" />
+                    <span id="msg_error"></span>
+                    <button id="btnConnect">Connect</button>
+                    <br>
+                </div>
+                <div class="div-input full">
+                    <label>Actions</label>
+                    <br>
+                    <button id="btnCircles">Run in circles</button>
+                    <button id="btnAhead">Go ahead</button>
+                    <button id="btnStop">Stop</button>
+                </div>
+            </form>
+
+
+
+
+            <div style="clear: both; color:white; margin-top: 20px !important; padding: 0 1%;">
+                <label>Scan</label>
+                <br>
+                <button id="btnScan">Scan</button>
+                <h2>Laser readings</h2>
+                <p>Maximum: <span id="maximum">-</span></p>
+                <p>Minimum: <span id="minimum">-</span></p>
+                <p>Mean: <span id="mean">-</span></p>
+            </div>
+        </div>
+
+        <div id="sidebar" class="content">
+            <h3>Summary</h3>
+            <ul>
+                <li>Use the button "Run in circles" to public such behavior to the robot</li>
+                <li>If you prefer going straight ahead, click over "Go ahead"</li>
+                <li>Or just use the button "Stop"</li>
+                <li>Keep pushing your [Web + ROS] learning!</li>
+            </ul>
+        </div>
+
+        <div id="footer">
+        </div>
+
+    </div>
+</body>
+
+</html>
